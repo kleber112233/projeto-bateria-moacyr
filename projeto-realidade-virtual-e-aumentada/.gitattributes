@@ -1,0 +1,10 @@
+# Normaliza as quebras de linha no repositório.
+# O grupo trabalha no Windows (CRLF) e o histórico foi criado com LF: sem esta
+# regra, cada máquina via todos os arquivos como "modificados" sem ninguém ter
+# mudado uma linha. Com ela, o repositório guarda LF e cada máquina converte
+# na hora de fazer checkout.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.glb binary
+*.pptx binary
